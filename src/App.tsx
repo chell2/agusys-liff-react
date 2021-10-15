@@ -5,7 +5,7 @@ import "./App.css";
 
 function App() {
 	const sendMessage = () => {
-		liff.init({ liffId: process.env.REACT_APP_LIFF_ID as string }).then(() => {
+		liff.init({ liffId: process.env.MY_LIFF_ID as string }).then(() => {
 			if (!liff.isLoggedIn()) {
 				liff.login({});
 			} else if (liff.isInClient()) {
@@ -26,7 +26,7 @@ function App() {
 		});
 	};
 	const getUserInfo = () => {
-		liff.init({ liffId: process.env.REACT_APP_LIFF_ID as string }).then(() => {
+		liff.init({ liffId: process.env.MY_LIFF_ID as string }).then(() => {
 			if (!liff.isLoggedIn()) {
 				liff.login({});
 			} else if (liff.isInClient()) {
