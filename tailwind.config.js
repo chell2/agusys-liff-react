@@ -1,11 +1,11 @@
 module.exports = {
 	mode: "jit",
 	purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-	darkMode: false,
+	darkMode: "dark",
 	plugins: [require("daisyui")],
 	daisyui: {
 		styled: true,
-		themes: ["cupcake", "emerald"],
+		themes: ["cupcake"],
 		base: true,
 		utils: true,
 		logs: true,
