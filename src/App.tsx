@@ -31,44 +31,36 @@ const App: React.FC = () => {
 				<div className="card shadow-lg">
 					<div className="card-body">
 						<h1 className="card-title">被災状況の報告</h1>
-						<br />
 						<form
 							method="POST"
 							action="https://script.google.com/macros/s/AKfycbxC57dGAtVmaX-otkO6RmUaJg1xEvWvgd7OtQwQt7xNy6o9zPEFARnd9ZJl5Cv2LkRm/exec"
 						>
 							<div className="form-control">
 								<label>作物名</label>
-								<br />
 								<input
 									name="crop_name"
 									type="text"
 									className="input input-success input-bordered"
 								/>
-								<br />
 								<label>被害にあった施設・機械</label>
-								<br />
 								<textarea
 									name="damage_target"
 									className="textarea h-24 textarea-bordered textarea-success"
 									placeholder="ビニールハウス、排水ポンプなど"
 								/>
-								<br />
-								<label>3 現地の状況</label>
-								<br />
+								<label>現地の状況</label>
 								<textarea
 									name="damege_status"
 									className="textarea h-24 textarea-bordered textarea-success"
 								/>
-								<br />
-								<button type="submit" className="btn btn-wide mt-6 btn-primary">
+								<button type="submit" className="btn btn-wide mt-6 btn-success">
 									記録する
 								</button>
 							</div>
 						</form>
-
 						<button
 							onClick={sendMessage}
-							className="btn btn-md mt-3 btn-outline btn-primary"
+							className="btn btn-md mt-6 btn-outline btn-success"
 						>
 							次の操作に進む
 						</button>
