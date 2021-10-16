@@ -33,7 +33,7 @@ const App: React.FC = () => {
 						<h1 className="card-title">被災状況の報告</h1>
 						<form
 							method="POST"
-							action="https://script.google.com/macros/s/AKfycbxC57dGAtVmaX-otkO6RmUaJg1xEvWvgd7OtQwQt7xNy6o9zPEFARnd9ZJl5Cv2LkRm/exec"
+							action="https://script.google.com/macros/s/AKfycbzyosMYIvBWpnxAKdTbLB_p7dAkzHIXrdVZAhmH5U897q8-lDpKzgftpY6m8WJPGD1r/exec"
 						>
 							<div className="form-control">
 								<label>作物名</label>
