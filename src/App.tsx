@@ -26,8 +26,9 @@ function App() {
 			}
 		});
 	};
+
 	const getUserInfo = () => {
-		liff.init({ liffId: process.env.MY_LIFF_ID as string }).then(() => {
+		liff.init({ liffId: process.env.REACT_APP_LIFF_ID as string }).then(() => {
 			if (!liff.isLoggedIn()) {
 				liff.login({});
 			} else if (liff.isInClient()) {
@@ -57,7 +58,7 @@ function App() {
 				</button>{" "}
 				<button className="button" onClick={getUserInfo}>
 					show user info
-				</button>
+				</button>{" "}
 				<a
 					className="App-link"
 					href="https://reactjs.org"
@@ -66,9 +67,6 @@ function App() {
 				>
 					Learn React
 				</a>
-				<button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-					Button
-				</button>
 			</header>
 		</div>
 	);
