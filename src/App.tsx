@@ -59,7 +59,7 @@ const App: React.FC = () => {
 									placeholder="詳細"
 								/>
 							</div>
-							<button type="submit" className="btn btn-wide mt-4 btn-success">
+							<button type="submit" className="btn mt-4 btn-wide btn-success">
 								記録する
 							</button>
 						</form>
