@@ -27,7 +27,7 @@ const App: React.FC = () => {
 
 	return (
 		<div className="App">
-			<div className="hero min-h-screen min-w-full text-center">
+			<div className="hero min-h-screen text-center">
 				<div className="card shadow-lg">
 					<div className="card-body">
 						<h1 className="card-title">被災状況の報告</h1>
