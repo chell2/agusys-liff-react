@@ -47,7 +47,7 @@ const App: React.FC = () => {
 								<label>被害にあった施設・機械</label>
 								<textarea
 									name="damage_target"
-									className="textarea h-20 max-h-48 textarea-bordered textarea-success"
+									className="textarea h-20 textarea-bordered textarea-success"
 									placeholder="ビニールハウス、排水ポンプ、管理機など"
 								/>
 							</div>
@@ -55,7 +55,7 @@ const App: React.FC = () => {
 								<label>現地の状況</label>
 								<textarea
 									name="damege_status"
-									className="textarea h-20 max-h-48 textarea-bordered textarea-success"
+									className="textarea h-20 textarea-bordered textarea-success"
 									placeholder="詳細"
 								/>
 							</div>
