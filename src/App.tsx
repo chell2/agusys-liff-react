@@ -1,83 +1,8 @@
-// import React from "react";
-// import liff from "@line/liff";
-// import logo from "./logo.svg";
-// import "./App.css";
-// require("dotenv").config();
-
-// function App() {
-// 	const sendMessage = () => {
-// 		liff.init({ liffId: process.env.MY_LIFF_ID as string }).then(() => {
-// 			if (!liff.isLoggedIn()) {
-// 				liff.login({});
-// 			} else if (liff.isInClient()) {
-// 				liff
-// 					.sendMessages([
-// 						{
-// 							type: "text",
-// 							text: "You've successfully sent a message! Hooray!",
-// 						},
-// 					])
-// 					.then(function () {
-// 						window.alert("Message sent");
-// 					})
-// 					.catch(function (error) {
-// 						window.alert("Error sending message: " + error);
-// 					});
-// 			}
-// 		});
-// 	};
-
-// 	const getUserInfo = () => {
-// 		liff.init({ liffId: process.env.REACT_APP_LIFF_ID as string }).then(() => {
-// 			if (!liff.isLoggedIn()) {
-// 				liff.login({});
-// 			} else if (liff.isInClient()) {
-// 				liff
-// 					.getProfile()
-// 					.then((profile) => {
-// 						const userId: string = profile.userId;
-// 						const displayName: string = profile.displayName;
-// 						alert(`Name: ${displayName}, userId: ${userId}`);
-// 					})
-// 					.catch(function (error) {
-// 						window.alert("Error sending message: " + error);
-// 					});
-// 			}
-// 		});
-// 	};
-
-// 	return (
-// 		<div className="App">
-// 			<header className="App-header">
-// 				<img src={logo} className="App-logo" alt="logo" />
-// 				<p>
-// 					Edit <code>src/App.tsx</code> and save to reload.
-// 				</p>
-// 				<button className="button" onClick={sendMessage}>
-// 					send message
-// 				</button>{" "}
-// 				<button className="button" onClick={getUserInfo}>
-// 					show user info
-// 				</button>{" "}
-// 				<a
-// 					className="App-link"
-// 					href="https://reactjs.org"
-// 					target="_blank"
-// 					rel="noopener noreferrer"
-// 				>
-// 					Learn React
-// 				</a>
-// 			</header>
-// 		</div>
-// 	);
-// }
-
-// export default App;
 import React from "react";
 import "./App.css";
 import liff from "@line/liff";
-const message = require("line-message-builder");
-// import { buildReplyText } from "line-message-builder";
+// import {buildReplyText} from "line-message-builder";
+require("dotenv").config();
 
 const App: React.FC = () => {
 	const sendMessage = () => {
@@ -85,9 +10,22 @@ const App: React.FC = () => {
 			if (!liff.isLoggedIn()) {
 				liff.login({});
 			}
-			liff.sendMessages(message.buildReplyText("test"));
+			liff
+				.sendMessages([
+					{
+						type: "text",
+						text: "Hello, World!",
+					},
+				])
+				.then(() => {
+					console.log("message sent");
+				})
+				.catch((err) => {
+					console.log("error", err);
+				});
 		});
 	};
+
 	return (
 		<div className="App">
 			<div className="hero min-h-screen bg-base-200">
