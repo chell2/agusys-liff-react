@@ -27,50 +27,48 @@ const App: React.FC = () => {
 
 	return (
 		<div className="App">
-			<div className="hero min-h-screen bg-base-100">
-				<div className="text-center hero-content">
-					<div className="card shadow-lg">
-						<div className="card-body">
-							<h1 className="card-title">被災状況の報告</h1>
-							<form
-								method="POST"
-								action="https://script.google.com/macros/s/AKfycbxC57dGAtVmaX-otkO6RmUaJg1xEvWvgd7OtQwQt7xNy6o9zPEFARnd9ZJl5Cv2LkRm/exec"
-							>
-								<div className="form-control">
-									<label>作物名</label>
-									<input
-										name="crop_name"
-										type="text"
-										className="input input-primary input-bordered"
-									/>
-								</div>
-								<div className="form-control mt-2">
-									<label>被害にあった施設・機械</label>
-									<textarea
-										name="damage_target"
-										className="textarea h-20 max-h-48 textarea-bordered textarea-primary"
-										placeholder="ビニールハウス、排水ポンプ、管理機など"
-									/>
-								</div>
-								<div className="form-control mt-2">
-									<label>現地の状況</label>
-									<textarea
-										name="damege_status"
-										className="textarea h-20 max-h-48 textarea-bordered textarea-primary"
-										placeholder="詳細"
-									/>
-								</div>
-								<button type="submit" className="btn mt-4 btn-wide btn-primary">
-									記録する
-								</button>
-							</form>
-							<button
-								onClick={sendMessage}
-								className="btn btn-md mt-4 btn-outline btn-primary"
-							>
-								次の操作に進む
+			<div className="hero min-h-auto text-center bg-base-100">
+				<div className="card shadow-lg mt-4">
+					<div className="card-body">
+						<h1 className="card-title">被災状況の報告</h1>
+						<form
+							method="POST"
+							action="https://script.google.com/macros/s/AKfycbxC57dGAtVmaX-otkO6RmUaJg1xEvWvgd7OtQwQt7xNy6o9zPEFARnd9ZJl5Cv2LkRm/exec"
+						>
+							<div className="form-control">
+								<label>作物名</label>
+								<input
+									name="crop_name"
+									type="text"
+									className="input input-success input-bordered"
+								/>
+							</div>
+							<div className="form-control mt-2">
+								<label>被害にあった施設・機械</label>
+								<textarea
+									name="damage_target"
+									className="textarea h-20 max-h-48 textarea-bordered textarea-success"
+									placeholder="ビニールハウス、排水ポンプ、管理機など"
+								/>
+							</div>
+							<div className="form-control mt-2">
+								<label>現地の状況</label>
+								<textarea
+									name="damege_status"
+									className="textarea h-20 max-h-48 textarea-bordered textarea-success"
+									placeholder="詳細"
+								/>
+							</div>
+							<button type="submit" className="btn mt-4 btn-wide btn-success">
+								記録する
 							</button>
-						</div>
+						</form>
+						<button
+							onClick={sendMessage}
+							className="btn btn-md mt-4 btn-outline btn-success"
+						>
+							次の操作に進む
+						</button>
 					</div>
 				</div>
 			</div>
