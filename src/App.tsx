@@ -45,11 +45,11 @@ const App: React.FC = () => {
 							</div>
 							<div className="form-control mt-2">
 								<label>被害にあった施設・機械</label>
-								<input
+								<textarea
 									name="damage_target"
 									className="textarea h-20 max-h-48 textarea-bordered textarea-success"
 									placeholder="ビニールハウス、排水ポンプ、管理機など"
-								/>
+								></textarea>
 							</div>
 							<div className="form-control mt-2">
 								<label>現地の状況</label>
