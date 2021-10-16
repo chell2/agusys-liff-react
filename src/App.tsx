@@ -36,31 +36,31 @@ const App: React.FC = () => {
 							action="https://script.google.com/macros/s/AKfycbxC57dGAtVmaX-otkO6RmUaJg1xEvWvgd7OtQwQt7xNy6o9zPEFARnd9ZJl5Cv2LkRm/exec"
 						>
 							<div className="form-control">
-								<label>作物名</label>
+								<h2>作物名</h2>
 								<input
 									name="crop_name"
 									type="text"
 									className="input input-success input-bordered"
 								/>
-								<label>被害にあった施設・機械</label>
+								<h2 mt-1>被害にあった施設・機械</h2>
 								<textarea
 									name="damage_target"
 									className="textarea h-24 textarea-bordered textarea-success"
 									placeholder="ビニールハウス、排水ポンプなど"
 								/>
-								<label>現地の状況</label>
+								<h2 mt-1>現地の状況</h2>
 								<textarea
 									name="damege_status"
 									className="textarea h-24 textarea-bordered textarea-success"
 								/>
-								<button type="submit" className="btn btn-wide mt-6 btn-success">
+								<button type="submit" className="btn btn-wide mt-4 btn-success">
 									記録する
 								</button>
 							</div>
 						</form>
 						<button
 							onClick={sendMessage}
-							className="btn btn-md mt-6 btn-outline btn-success"
+							className="btn btn-md mt-4 btn-outline btn-success"
 						>
 							次の操作に進む
 						</button>
