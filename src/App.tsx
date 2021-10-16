@@ -111,15 +111,12 @@ const App: React.FC = () => {
 								<button type="submit" className="btn btn-md mt-3">
 									post
 								</button>
+								<button onClick={sendMessage} className="btn btn-md mt-3">
+									Send Message
+								</button>
 							</form>
 						</div>
 					</div>
-				</div>
-				<br />
-				<div>
-					<button className="button" onClick={sendMessage}>
-						Send Message
-					</button>
 				</div>
 			</div>
 		</div>
