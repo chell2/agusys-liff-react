@@ -33,7 +33,7 @@ const App: React.FC = () => {
 						<h1 className="card-title">被災状況の報告</h1>
 						<form
 							method="POST"
-							action="https://script.google.com/macros/s/AKfycbxW07r9QxHxMYo3yvFhxzTq3nSfkuvqLN-Keblb279uIXtU7K8eCmV2nya1RgAYnS4c/exec"
+							action="https://script.google.com/macros/s/AKfycbzqcnm3om_yI4Q86TgxPS6gU6LDRA-Mj5wv7pZQcHjwHYVGgz7aVYQB8AkIG4u1WFFN/exec"
 						>
 							<div className="form-control">
 								<label>作物名</label>
@@ -45,17 +45,18 @@ const App: React.FC = () => {
 							</div>
 							<div className="form-control mt-2">
 								<label>被害にあった施設・機械</label>
-								<textarea
+								<input
 									name="damage_target"
-									className="textarea h-20 max-h-48 textarea-bordered textarea-success"
+									type="text"
+									className="input input-success input-bordered"
 									placeholder="ビニールハウス、排水ポンプ、管理機など"
-								></textarea>
+								/>
 							</div>
 							<div className="form-control mt-2">
 								<label>現地の状況</label>
 								<textarea
 									name="damege_status"
-									className="textarea h-20 max-h-48 textarea-bordered textarea-success"
+									className="textarea h-24 max-h-48 textarea-bordered textarea-success"
 									placeholder="詳細"
 								></textarea>
 							</div>
