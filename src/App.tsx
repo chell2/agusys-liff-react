@@ -85,7 +85,6 @@ const App: React.FC = () => {
 			if (!liff.isLoggedIn()) {
 				liff.login({});
 			}
-
 			liff.sendMessages(message.buildReplyText("test"));
 		});
 	};
@@ -111,10 +110,10 @@ const App: React.FC = () => {
 								<button type="submit" className="btn btn-md mt-3">
 									post
 								</button>
-								<button onClick={sendMessage} className="btn btn-md mt-3">
-									Send Message
-								</button>
 							</form>
+							<button onClick={sendMessage} className="btn btn-md mt-3">
+								Send Message
+							</button>
 						</div>
 					</div>
 				</div>
