@@ -13,7 +13,7 @@ const App: React.FC = () => {
 				.sendMessages([
 					{
 						type: "text",
-						text: "次の操作に進む\n【被災写真】",
+						text: "次の操作に進む\n>>被災写真",
 					},
 				])
 				.then(function () {
@@ -36,24 +36,30 @@ const App: React.FC = () => {
 							action="https://script.google.com/macros/s/AKfycbxC57dGAtVmaX-otkO6RmUaJg1xEvWvgd7OtQwQt7xNy6o9zPEFARnd9ZJl5Cv2LkRm/exec"
 						>
 							<div className="form-control">
-								<h2>作物名</h2>
+								<label>作物名</label>
 								<input
 									name="crop_name"
 									type="text"
 									className="input input-success input-bordered"
 								/>
-								<h2 mt-1>被害にあった施設・機械</h2>
+								<br />
+								<label>被害にあった施設・機械</label>
 								<textarea
 									name="damage_target"
 									className="textarea h-24 textarea-bordered textarea-success"
-									placeholder="ビニールハウス、排水ポンプなど"
+									placeholder="ビニールハウス、排水ポンプ、管理機など"
 								/>
-								<h2 mt-1>現地の状況</h2>
+								<br />
+								<label>現地の状況</label>
 								<textarea
 									name="damege_status"
 									className="textarea h-24 textarea-bordered textarea-success"
 								/>
-								<button type="submit" className="btn btn-wide mt-4 btn-success">
+								<button
+									type="submit"
+									className="btn btn-wide mt-4 btn-success"
+									placeholder="詳細"
+								>
 									記録する
 								</button>
 							</div>
