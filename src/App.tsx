@@ -49,7 +49,7 @@ const App: React.FC = () => {
 									name="damage_target"
 									className="textarea h-20 max-h-48 textarea-bordered textarea-success"
 									placeholder="ビニールハウス、排水ポンプ、管理機など"
-								/>
+								></textarea>
 							</div>
 							<div className="form-control mt-2">
 								<label>現地の状況</label>
@@ -57,7 +57,7 @@ const App: React.FC = () => {
 									name="damege_status"
 									className="textarea h-20 max-h-48 textarea-bordered textarea-success"
 									placeholder="詳細"
-								/>
+								></textarea>
 							</div>
 							<button type="submit" className="btn mt-4 btn-wide btn-success">
 								記録する
