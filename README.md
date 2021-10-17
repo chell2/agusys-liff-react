@@ -20,3 +20,4 @@ https://agusys-liff.vercel.app/
 
 - LINE Front-end Framework
 - React / TypeScript
+- tailwindcss / daisyUI
