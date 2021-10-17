@@ -52,7 +52,7 @@ const App: React.FC = () => {
 								></textarea>
 							</div>
 							<div className="form-control mt-2">
-								<label>現地の状況</label>
+								<label>被害の状況</label>
 								<textarea
 									name="damege_status"
 									className="textarea h-24 max-h-48 textarea-bordered textarea-success"
