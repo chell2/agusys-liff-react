@@ -9,7 +9,7 @@ ReactDOM.render(
 	<React.StrictMode>
 		<BrowserRouter>
 			<Switch>
-				<Route path="/1" exact component={DR} />
+				<Route path="/" exact component={DR} />
 				<Route path="/2" exact component={RC} />
 				<Redirect to="/" />
 			</Switch>
