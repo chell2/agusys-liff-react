@@ -3,7 +3,7 @@ import "./App.css";
 import liff from "@line/liff";
 require("dotenv").config();
 
-const App: React.FC = () => {
+const PageDR: React.FC = () => {
 	const sendMessage = () => {
 		liff.init({ liffId: process.env.REACT_APP_LIFF_ID as string }).then(() => {
 			if (!liff.isLoggedIn()) {
@@ -27,7 +27,7 @@ const App: React.FC = () => {
 
 	return (
 		<div className="App">
-			<div className="hero min-h-auto text-center bg-base-100">
+			<div className="hero min-h-auto text-center bg-base-100 mt-4">
 				<div className="card shadow-lg mt-2">
 					<div className="card-body">
 						<h1 className="card-title">被災状況の報告</h1>
@@ -65,7 +65,7 @@ const App: React.FC = () => {
 						</form>
 						<button
 							onClick={sendMessage}
-							className="btn btn-md mt-4 btn-outline btn-success"
+							className="btn btn-md mt-2 btn-outline btn-success"
 						>
 							次の操作に進む
 						</button>
@@ -76,4 +76,4 @@ const App: React.FC = () => {
 	);
 };
 
-export default App;
+export default PageDR;
