@@ -14,7 +14,7 @@
 
 ### URL
 
-https://agusys-liff.vercel.app/
+:seedling: https://agusys-liff.vercel.app/
 
 ### 開発環境
 
